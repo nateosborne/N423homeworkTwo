@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </nav>
+      <div class="hero">
+        <div class="search-container">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search city/zipcode"
+            id="search-input"
+          />
+          <select name="forecast" id="forecast">
+            <option value="">Days</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <input type="submit" value="Go" id="search" />
+        </div>
+      </div>
+      <div class="weatherHolder"></div>
+      <div class="forecastHolder"></div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>
